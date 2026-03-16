@@ -7,7 +7,12 @@ import (
 func main() {
 	var N int
 	fmt.Scan(&N)
-	for i := 2; i <= N; i += 2 {
-		fmt.Printf("%d^2 = %d\n", i, i*i)
+
+	if N > 5 && N < 2000 {
+		for i := 2; i <= N; i += 2 {
+			fmt.Printf("%d^2 = %d\n", i, i*i)
+		}
+	} else {
+		fmt.Println("Numero invalido!")
 	}
 }
