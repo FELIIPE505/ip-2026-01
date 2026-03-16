@@ -13,3 +13,5 @@ salvar alterações no github:
 git add .
 git commit -m "descrição do que fez"
 git push
+
+git pull
