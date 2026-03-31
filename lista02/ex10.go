@@ -12,26 +12,36 @@ func main() {
 	if destino == 1 {
 		if idavolta == 1 {
 			f.Printf("O VALOR DA PASSAGEM É 900")
-		} else {
+		} else if idavolta == 2 {
 			f.Printf("O VALOR DA PASSAGEM É 500")
+		} else {
+			f.Printf("IDA E VOLTA INVALIDO")
 		}
 	} else if destino == 2 {
 		if idavolta == 1 {
 			f.Printf("O VALOR DA PASSAGEM É 600.50")
-		} else {
+		} else if idavolta == 2 {
 			f.Printf("O VALOR DA PASSAGEM É 350")
+		} else {
+			f.Printf("IDA E VOLTA INVALIDO")
 		}
 	} else if destino == 3 {
 		if idavolta == 1 {
 			f.Printf("O VALOR DA PASSAGEM É 600")
-		} else {
+		} else if idavolta == 2 {
 			f.Printf("O VALOR DA PASSAGEM É 350")
-		}
-	} else if destino == 2 {
-		if idavolta == 4 {
-			f.Printf("O VALOR DA PASSAGEM É 550")
 		} else {
-			f.Printf("O VALOR DA PASSAGEM É 300")
+			f.Printf("IDA E VOLTA INVALIDO")
 		}
+	} else if destino == 4 {
+		if idavolta == 1 {
+			f.Printf("O VALOR DA PASSAGEM É 550")
+		} else if idavolta == 2 {
+			f.Printf("O VALOR DA PASSAGEM É 300")
+		} else {
+			f.Printf("IDA E VOLTA INVALIDO")
+		}
+	} else {
+		f.Printf("DESTINO INVALIDO")
 	}
 }
